@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pocas Luces</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+
+	<div class="logo">
+		    <IMG SRC="/pocas_luces.png" ALT="Rezagadas el blog de Astronomía" width=95% >
+		</div>
+
+
+	<div class="col-md-3">
+
+	     <nav class="bs-sidebar hidden-print affix-top" role="complementary">
+			
+	     	<ul class="nav bs-sidenav">
+	     		<li><%= link_to 'Inicio', root_path %></li>
+			    <li><%= link_to 'Contenidos', entrada_blogs_path %></li>
+			    <li><%= link_to 'Fotografías', foto_path  %></li>
+			    <li><%= link_to 'Matemáticas y Astronomía', mates_path %></li>
+			    <li><%= link_to 'Contacto',home_contacto_path %></li>
+
+		</nav>
+
+
+		<div class="col-suscrip">
+			<p id="notice"><%= notice %></p>
+			<h3> Suscribirme por correo</h3>
+
+			<%= form_for Usuario.new do |f| %>
+
+				<div class="field">
+				  <%= f.label :Nombre %>:
+				  <%= f.text_field :Nombre %>
+				</div>
+				<div class="field">
+					<%= f.label :email %>:
+					<%= f.text_field :email %>
+				</div>
+				<div class="button">
+					<%= f.radio_button :codigo, "foto" %>
+					<%= f.label :codigo, 'Solo Fotografías' %>
+				</div>
+				<div class="button">
+					<%= f.radio_button :codigo, "mates" %>
+					<%= f.label :codigo, 'Solo matemáticas' %>
+				</div>
+				<div class="button">
+					<%= f.radio_button :codigo, "todo" %>
+					<%= f.label :codigo, 'Todas las actualizaciones' %>
+				</div>
+
+
+					  <%= f.simple_captcha :label => "Copia los caracteres anteriores" %>
+
+
+				<div class="actions">
+					<%= f.submit "Crear suscripción" %>
+				</div>
+			<% end %>
+			
+
+
+
+		</div>	
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="col-md-9" role="main">
+
+
+	<%= yield %>
+
+	</div>
+
+<br>
+</body>
+
+
+
+</html>

@@ -1,0 +1,23 @@
+
+
+<h1>Historial de entradas en el blog</h1>
+
+<table class="table">
+
+
+  <tbody>
+    <% @entrada_blogs.each do |entrada_blog| %>
+      <tr>
+        <td><%= image_tag entrada_blog.image.url(:thumb) %></td>
+
+        <td><%= link_to entrada_blog.titulo, entrada_blog %></td>
+        <td><%= link_to 'Edit', edit_entrada_blog_path(entrada_blog) %></td>
+        <td><%= link_to 'Destroy', entrada_blog, method: :delete, data: { confirm: 'Are you sure?' } %>   </td>
+      </tr>
+
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

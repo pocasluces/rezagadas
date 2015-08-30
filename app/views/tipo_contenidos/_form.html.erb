@@ -1,0 +1,37 @@
+<%= form_for(@tipo_contenido) do |f| %>
+  <% if @tipo_contenido.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipo_contenido.errors.count, "error") %> prohibited this tipo_contenido from being saved:</h2>
+
+      <ul>
+      <% @tipo_contenido.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :astrofoto %><br>
+    <%= f.check_box :astrofoto %>
+  </div>
+  <div class="field">
+    <%= f.label :metematica %><br>
+    <%= f.check_box :metematica %>
+  </div>
+  <div class="field">
+    <%= f.label :otro1 %><br>
+    <%= f.check_box :otro1 %>
+  </div>
+  <div class="field">
+    <%= f.label :otro2 %><br>
+    <%= f.check_box :otro2 %>
+  </div>
+  <div class="field">
+    <%= f.label :otrotxt %><br>
+    <%= f.text_field :otrotxt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

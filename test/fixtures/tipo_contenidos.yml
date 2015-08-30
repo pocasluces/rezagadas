@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  astrofoto: false
+  metematica: false
+  otro1: false
+  otro2: false
+  otrotxt: MyString
+
+two:
+  astrofoto: false
+  metematica: false
+  otro1: false
+  otro2: false
+  otrotxt: MyString

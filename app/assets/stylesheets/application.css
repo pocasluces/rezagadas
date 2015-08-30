@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/* he descubierto bootstrap así que me dejo de lios.
+
+body {
+  background-color: #ccc;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+*/
+.col-md-3 {
+    width: 25%;
+}
+.col-md-9 {
+    width: 60%;
+    background-color: #F5F5F5;
+        margin-top: 30px;
+
+
+}
+
+
+.bs-sidenav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0px 1px 0px #FFF;
+    background-color: #F5F5F5;
+}
+
+
+.col-suscrip{
+	    background-color: #F5F5F5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0px 1px 0px #FFF;
+
+
+}
+
+
+
+
+.col-md-3 {
+    width: 25%;
+        text-indent:15px;
+
+}
+
+
+.logo  {
+		 margin: 0 auto;
+		 width: 90%;
+		     margin-top: 15px;
+
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+    margin: 0 auto;
+    text-align : justify;
+    word-wrap: break-word; 
+}
+

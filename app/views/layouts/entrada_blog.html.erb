@@ -1,0 +1,36 @@
+<body>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+
+	<div id="cabecera">
+
+
+		<div id="logo">
+		    <IMG SRC="/pocas_luces.png" ALT="Rezagadas el blog de Astronomía" width=100% >
+		</div>
+
+
+
+	</div>
+
+
+<br>
+
+
+	<div id="menu">
+
+		<%= render 'menu' %>
+
+	</div>
+
+
+
+	<div id="principal">
+
+	<%= yield %>
+
+	</div>
+
+<br>
+</body>

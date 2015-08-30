@@ -1,0 +1,62 @@
+<%= form_for(@entrada_blog) do |f| %>
+  <% if @entrada_blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entrada_blog.errors.count, "error") %> prohibited this entrada_blog from being saved:</h2>
+
+      <ul>
+      <% @entrada_blog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </div>
+  <div class="field">
+    <%= f.label :imagen %><br>
+    <%= f.text_field :imagen %>
+  </div>
+  <div class="field">
+    <%= f.label :otro1 %><br>
+    <%= f.text_area :otro1 %>
+  </div>
+  <div class="field">
+    <%= f.label :otro2 %><br>
+    <%= f.text_area :otro2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <%= f.fields_for :tipo_contenido do | tipo_contenido_fields | %>
+    <div class="tipo_contenidos_fields">
+
+      <div class="fields">
+        <%= tipo_contenido_fields.label :astrofoto, "astrofotos" %><br>
+        <%= tipo_contenido_fields.check_box :astrofoto %>
+      </div>
+      <div class="fields">
+          <%= tipo_contenido_fields.label :metematica, "matematicas" %><br>
+          <%= tipo_contenido_fields.check_box :metematica %>
+      </div>
+
+    </div>
+    <% end %>
+
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+
+
+<% end %>
