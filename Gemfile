@@ -48,11 +48,13 @@ group :development, :test do
 
   #esto lo añado yo aquí porque no funciona.
   gem 'paperclip'
+
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+  gem 'sqlite3'
 end
 
+
 group :production do
-	gem 'pg', '0.15.1'
+	gem 'pg'
 	gem 'rails_12factor', '0.0.2'
 end
