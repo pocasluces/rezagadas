@@ -15,7 +15,9 @@
     <div id="cuerpo_entrada">
 
 
-  <%= @entrada_blog.body %>
+  <% @code =  "<p> #{@entrada_blog.body} <p>" %> 
+  
+  <%= @code.html_safe %>
 
 
 
