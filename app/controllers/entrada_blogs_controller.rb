@@ -96,7 +96,9 @@ class EntradaBlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def entrada_blog_params
-      params.require(:entrada_blog).permit(:titulo, :body, :imagen, :otro1, :otro2, :image, tipo_contenido_attributes: [:astrofoto, :metematica])
+      params.require(:entrada_blog).permit(:titulo, :body, :otro1, :otro2, :image, tipo_contenido_attributes: [:astrofoto, :metematica])
+      #params.require(:entrada_blog).permit(:titulo, :body, :imagen, :otro1, :otro2, :image, tipo_contenido_attributes: [:astrofoto, :metematica])
+
     end
 
     def authenticate

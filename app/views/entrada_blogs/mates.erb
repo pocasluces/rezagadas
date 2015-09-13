@@ -7,7 +7,6 @@
   <tbody>
     <% @entrada_blogs.each do |entrada_blog| %>
       <tr>
-        <td><%= image_tag entrada_blog.image.url(:thumb) %></td>
 
         <td><%= link_to entrada_blog.titulo, entrada_blog %></td>
 

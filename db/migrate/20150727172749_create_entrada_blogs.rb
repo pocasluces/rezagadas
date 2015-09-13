@@ -10,6 +10,6 @@ class CreateEntradaBlogs < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-     add_attachment :entrada_blogs, :image
+     #add_attachment :entrada_blogs, :image
   end
 end

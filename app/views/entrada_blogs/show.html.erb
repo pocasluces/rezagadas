@@ -35,12 +35,6 @@
 
 
 
-    <div id="imagen_entrada">
-      <p>
-
-      <%= image_tag @entrada_blog.image.url(:large), style: 'width:100%;' %> </p>
-
-    </div>
 
 
 
@@ -89,7 +83,6 @@
   <tbody>
     <% @entrada_blogs_all.order(id: :desc).each do |entrada_blog_all| %>
       <tr>
-        <td><%= image_tag entrada_blog_all.image.url(:thumb),  width: "20%" %></td>
  
 
         <td><%= link_to entrada_blog_all.titulo, entrada_blog_all %></td>
