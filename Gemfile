@@ -36,6 +36,8 @@ gem 'simple_captcha', git: 'git://github.com/pludoni/simple-captcha.git'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+#estas gemas son muy importantes para le ejecución de la aplicación en remoto.
 gem 'rack'
 gem 'thin'
 
