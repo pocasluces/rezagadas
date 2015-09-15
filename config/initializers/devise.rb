@@ -1,0 +1,1 @@
+config.mailer_sender = "mail-to-send@from.com"
