@@ -12,6 +12,8 @@
     <% @entrada_blogs.each do |entrada_blog| %>
       <tr>
 
+        <% ruta ="/imagenes/Posts/#{entrada_blog.id}/#{entrada_blog.id}_60x40.jpg" %>
+        <td> <%= link_to image_tag(ruta, :alt => "miniatura"), entrada_blog %> </td>
         <td><%= link_to entrada_blog.titulo, entrada_blog %></td>
 
       </tr>
