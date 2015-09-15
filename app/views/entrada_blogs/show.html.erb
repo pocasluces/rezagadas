@@ -83,11 +83,10 @@
   <tbody>
     <% @entrada_blogs_all.order(id: :desc).each do |entrada_blog_all| %>
       <tr>
-              <% ruta ="/imagenes/Posts/#{entrada_blog_all.id}/#{entrada_blog_all.id}_60x40.jpg" %>
-                      <td> <%= link_to image_tag(ruta, :alt => "miniatura"), entrada_blog_all %> </td>
+        <% ruta ="/imagenes/Posts/#{entrada_blog_all.id}/#{entrada_blog_all.id}_60x40.jpg" %>
+        <td> <%= link_to image_tag(ruta, :alt => "miniatura"), entrada_blog_all %> </td>
         <td><%= link_to entrada_blog_all.titulo, entrada_blog_all %></td>
-        <td><%= link_to 'Edit', edit_entrada_blog_path(entrada_blog_all) %></td>
-        <td><%= link_to 'Destroy', entrada_blog_all, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
       </tr>
     <% end %>
   </tbody>
