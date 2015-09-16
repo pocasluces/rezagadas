@@ -87,14 +87,3 @@ body {
 
 
 
-.cuerpo_entrada a:visited {
-    color: #000099;
-}
-.cuerpo_entrada a:link {
-    color: #000099;}
-
-.cuerpo_entrada a:hover {
-    color: #0000FF;
-    text-decoration: underline;
-    background-color: transparent;
-}

@@ -1,4 +1,7 @@
 validaciones en cada modelo. qué campos son obligatorios y cuales no, así como validar el email, etc.
 Comprobar rutas accesibles.
-Ruta para modificación de post.
+
+Validar correo en suscripciones.
+Prohibir a un correo estar dos veces.
+
 
