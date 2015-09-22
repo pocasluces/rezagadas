@@ -5,3 +5,6 @@ Validar correo en suscripciones.
 Prohibir a un correo estar dos veces.
 
 
+Solucionar el formato de correos
+
+Obligar a escoger un tipo de suscripción. HECHO

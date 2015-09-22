@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
+  
 
 
 
@@ -28,7 +29,7 @@ def create
         format.html { redirect_to :back, notice: 'Suscripción creada correctamente.' }
         format.json { render :show, status: :created, location: @usuario }
       else
-        format.html { redirect_to :back, notice: 'Error en la suscripción. Comprueba el código captcha.' }
+        format.html { redirect_to :back, notice: 'Error en la suscripción. Comprueba que has escrito tu nombre, email o captcha correctamente.' }
         format.json { render json: @usuario.errors, status: :unprocessable_entity }
       end
     end
