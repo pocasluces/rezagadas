@@ -1,10 +1,12 @@
 validaciones en cada modelo. qué campos son obligatorios y cuales no, así como validar el email, etc.
 Comprobar rutas accesibles.
 
-Validar correo en suscripciones.
 Prohibir a un correo estar dos veces.
-
 
 Solucionar el formato de correos
 
 Obligar a escoger un tipo de suscripción. HECHO
+
+mostrar imágenes a tamaño completo.
+
+formato links en producción.
