@@ -1,39 +1,36 @@
 
-<p>
+
 
 <div class="cuerpo_post">
 
 
   <div id="titulo_entrada">
-    <h2>
-  <%= @entrada_blog.titulo %>
-</h2>
-  </div>
-</p>
 
-<p>
-    <div class="cuerpo_entrada">
-
-
-  <% @code =  "<p> #{@entrada_blog.body} <p>" %> 
+      <h2>
+      <p>
+      <%= @entrada_blog.titulo %>
+      </p>
+      </h2>
   
-  <%= @code.html_safe %>
-
-
-
   </div>
 
-</p>
 
 
+  <div class="cuerpo_entrada">
+
+    <p>
+      <% @code =  "<p> #{@entrada_blog.body} <p>" %> 
+  
+      <%= @code.html_safe %>
+
+    </p>
+  </div>
 
 
-
-
-
- <h2> Comentarios</h2>
- <div id="comentarios">
-    <% @entrada_blog.comentarios.each do |comentario| %>
+    <h2> Comentarios</h2>
+    
+    <div id="comentarios">
+      <% @entrada_blog.comentarios.each do |comentario| %>
       <%= div_for comentario do %>
       <p>
         <h4><%= h(comentario.alias) %>:</h4>
@@ -43,23 +40,23 @@
         <br>
       </p>
       <% end %>
+      <% end %>
+    </div>
+
+     <%= form_for([@entrada_blog, Comentario.new]) do |f| %>
+         <p><%= f.label :alias, "¿Quién eres?" %><br />
+           <%= f.text_field :alias %>
+        </p>
+        <p><%= f.label :body, "Escribe tu comentario" %><br />
+           <%= f.text_area :body, :size=> "60x8" %>
+        </p>
+        <p><%= f.submit "Subir comentario" %></p>
     <% end %>
- </div>
-
- <%= form_for([@entrada_blog, Comentario.new]) do |f| %>
-     <p><%= f.label :alias, "¿Quién eres?" %><br />
-       <%= f.text_field :alias %>
-    </p>
-    <p><%= f.label :body, "Escribe tu comentario" %><br />
-       <%= f.text_area :body, :size=> "60x8" %>
-    </p>
-    <p><%= f.submit "Subir comentario" %></p>
-<% end %>
 
 
 
 
-<%= link_to 'Volver', entrada_blogs_path %>
+      <%= link_to 'Volver', entrada_blogs_path %>
 
 
 
@@ -67,27 +64,23 @@
 
 
 
-<h3>Historial de entradas en el blog</h3>
+        <h3>Historial de entradas en el blog</h3>
 
-<table class="table">
-
-
-  <tbody>
-    <% @entrada_blogs_all.order(id: :desc).each do |entrada_blog_all| %>
-      <tr>
-        <% ruta ="/imagenes/Posts/#{entrada_blog_all.id}/#{entrada_blog_all.id}_60x40.jpg" %>
-        <td> <%= link_to image_tag(ruta, :alt => "miniatura"), entrada_blog_all %> </td>
-        <td><%= link_to entrada_blog_all.titulo, entrada_blog_all %></td>
-
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+        <table class="table">
 
 
+          <tbody>
+            <% @entrada_blogs_all.order(id: :desc).each do |entrada_blog_all| %>
+              <tr>
+                <% ruta ="/imagenes/Posts/#{entrada_blog_all.id}/#{entrada_blog_all.id}_60x40.jpg" %>
+                <td> <%= link_to image_tag(ruta, :alt => "miniatura"), entrada_blog_all %> </td>
+                <td><%= link_to entrada_blog_all.titulo, entrada_blog_all %></td>
 
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
 
+        <br>
 
-</div class="cuerpo_post">
+</div>
