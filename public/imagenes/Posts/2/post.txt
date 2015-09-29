@@ -1,4 +1,8 @@
-<IMG SRC="/imagenes/Posts/2/2.jpg" ALT="Cometa Lovejoy" width=100% ><br><br>
+<IMG SRC="/imagenes/Posts/2/2.jpg" ALT="Cometa Lovejoy" width=100% ><br>
+
+<a href="https://flic.kr/p/zdV3oh" target="_blank"> Ver imagen a tamaño completo</a>
+
+<br><br>
 
 Para hacer astrofotografía no hace falta enganchar una cámara de fotos a un telescopio. Estoy seguro de que la mayoría de los que estén leyendo este post, tienen una cámara en su teléfono de similar resolución que la que utilicé al lanzar esta fotografía (canon 350D). Para hacer esta foto tan solo necesitaríais un trípode.<br><br>
 
@@ -16,6 +20,7 @@ Bueno, una sola foto no. Un atardecer de un cielo nublado es especialmente bonit
 En el claro de nubes que se observa a la derecha, se ve un punto luminoso. Es <a href="https://es.wikipedia.org/wiki/Venus_%28planeta%29" target="_blank">Venus</a>, uno de los objetos más brillantes del cielo. Esto es así, por su cercanía a la tierra, y por que tiene una atmósfera blanca muy opaca que refleja la mayoría de los rayos del sol. Junto a Venus, muy pegado y a su derecha está <a href="https://es.wikipedia.org/wiki/Mercurio_%28planeta%29" target="_blank">Mercurio</a>, no tan visible como Venus, pero si tenéis el tamaño de imagen adecuado lo veréis con facilidad.<br><br>
 
 Ambos planetas son observables en los atardeceres o en los amaneceres. Siempre cercanos al sol, pero nunca en mitad de la noche. Se debe a que ambos son planetas interiores. Su órbita respecto al sol, es interior a la órbita de la tierra. Por eso la tierra nunca estará situada entre alguno de estos planetas y el sol, que sería la única manera de verlos en mitad de una noche.<br><br>
+
 
 
 

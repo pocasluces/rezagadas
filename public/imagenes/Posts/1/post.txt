@@ -1,4 +1,8 @@
-<IMG SRC="/imagenes/Posts/1/1.jpg" ALT="Cometa Lovejoy" width=100% ><br><br>
+<IMG SRC="/imagenes/Posts/1/1.jpg" ALT="Cometa Lovejoy" width=100% ><br>
+<a href="https://flic.kr/p/zeUpxF" target="_blank"> Ver imagen a tamaño completo. </a>
+
+
+<br><br>
 
 
 
