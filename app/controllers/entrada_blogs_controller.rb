@@ -103,7 +103,7 @@ class EntradaBlogsController < ApplicationController
 
     def authenticate
       authenticate_or_request_with_http_basic do |name, password|
-      name == "luces@pocas" && password == "miedo@oscuridad"
+      name == ENV["superuser_name"] && password == ENV["superuser_pass"]
       #ruta nuevo post: /entrada_blog/new
       #ruta editar post: /entrada_blog/5/edit
       #ruta resumen : /editablog

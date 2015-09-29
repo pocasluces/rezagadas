@@ -10,3 +10,6 @@ Obligar a escoger un tipo de suscripción. HECHO
 mostrar imágenes a tamaño completo.
 
 formato links en producción.
+
+
+ocultar contraseñas en código.
