@@ -2,7 +2,8 @@ Rails.application.configure do
 
 
   #configurarmos sendgrid como gestor de envio de correos.
-  config.action_mailer.default_url_options = { :host => 'pocasluces.es'} 
+  config.action_mailer.default_url_options = { :host => 'smtp.sendgrid.net'} 
+  config.action_mailer.asset_host = 'http://pocasluces.es'
 
 
   # Settings specified here will take precedence over those in config/application.rb.
