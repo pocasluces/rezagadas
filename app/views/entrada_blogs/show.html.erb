@@ -14,6 +14,16 @@
   
   </div>
 
+  <div id="fecha">
+
+      <% t_create=@entrada_blog.created_at %>
+      <% t_update=@entrada_blog.updated_at %>
+     Creado el día <%=  t_create.strftime("%d-%m-%Y a las %H:%M") %>.<br>
+      Última actualización <%=  t_create.strftime("%d-%m-%Y a las %H:%M") %>
+
+ 
+  </div>
+
 
 
   <div class="cuerpo_entrada">

@@ -3,6 +3,7 @@ ocultar contraseñas en código. HECHO
 Solucionar el formato de correos. HECHO
 formato links en producción. HECHO
 Prohibir a un correo estar dos veces. HECHO
+añadir fecha a los post. HECHO
 
 
 mostrar imágenes a tamaño completo. APAÑADO con flickr.
@@ -13,4 +14,7 @@ validaciones en cada modelo. qué campos son obligatorios y cuales no, así como
 
 Comprobar rutas accesibles.
 
-añadir fecha a los post.
+
+Configurar envio automático actualizaciones.
+
+captcha en los comentarios.
