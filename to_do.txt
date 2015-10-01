@@ -2,6 +2,7 @@ Obligar a escoger un tipo de suscripción. HECHO
 ocultar contraseñas en código. HECHO
 Solucionar el formato de correos. HECHO
 formato links en producción. HECHO
+Prohibir a un correo estar dos veces. HECHO
 
 
 mostrar imágenes a tamaño completo. APAÑADO con flickr.
@@ -11,7 +12,5 @@ mostrar imágenes a tamaño completo. APAÑADO con flickr.
 validaciones en cada modelo. qué campos son obligatorios y cuales no, así como validar el email, etc.
 
 Comprobar rutas accesibles.
-
-Prohibir a un correo estar dos veces.
 
 añadir fecha a los post.
