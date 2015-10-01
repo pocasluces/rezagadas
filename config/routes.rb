@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :usuarios
 
 
-   root 'home#index'
+   root :to => 'home#index'
 
 
   get 'foto' => 'entrada_blogs#foto'
