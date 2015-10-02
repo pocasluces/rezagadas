@@ -49,9 +49,16 @@ class EntradaBlogsController < ApplicationController
   # POST /entrada_blogs.json
   def create
     @entrada_blog = EntradaBlog.new(entrada_blog_params)
+    @usuarios = Usuario.all
 
     respond_to do |format|
       if @entrada_blog.save
+
+            @usuarios.each do |usuario| 
+            @usuario_correo = usuario
+                 Actualizacion.notificacion(@entrada_blog, @usuario_correo).deliver_now
+            end
+
         format.html { redirect_to @entrada_blog, notice: 'Entrada blog was successfully created.' }
         format.json { render :show, status: :created, location: @entrada_blog }
       else
