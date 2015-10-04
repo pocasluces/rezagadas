@@ -15,6 +15,6 @@ validaciones en cada modelo. qué campos son obligatorios y cuales no, así como
 Comprobar rutas accesibles.
 
 
-Configurar envio automático actualizaciones.
+Configurar envio automático actualizaciones, por suscripciones.
 
 captcha en los comentarios.

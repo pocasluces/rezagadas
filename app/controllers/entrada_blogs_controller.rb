@@ -49,13 +49,34 @@ class EntradaBlogsController < ApplicationController
   # POST /entrada_blogs.json
   def create
     @entrada_blog = EntradaBlog.new(entrada_blog_params)
-    @usuarios = Usuario.all
+
+
+  
+
 
     respond_to do |format|
       if @entrada_blog.save
 
+          @tipoentrada = TipoContenido.find_by_entrada_blog_id( @entrada_blog.id)
+
+          # Seleccionamos los usuarios a los que hay que enviar el correo electrónico
+          #dependiendo de sus suscripciones.
+          #En este paso la aplicación devolvía un ERROR porque no podía incluir un ELSIF con:
+          #  elsif @tipoentrada.astrofoto
+          #     @usuarios = Usuario.find_by_codigo('foto' || 'todo')
+          #Hubiese sido más conveniente para el else hacerlo con Usuario.all
+
+          if @tipoentrada.metematica
+            @usuarios = Usuario.where({codigo: ["todo", "mates"]})
+         elsif @tipoentrada.astrofoto
+            @usuarios = Usuario.where({codigo: ["todo", "foto"]})
+          else 
+            @usuario = Usuario.all
+          end
+
+
             @usuarios.each do |usuario| 
-            @usuario_correo = usuario
+                 @usuario_correo = usuario
                  Actualizacion.notificacion(@entrada_blog, @usuario_correo).deliver_now
             end
 
