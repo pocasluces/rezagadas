@@ -4,6 +4,7 @@ Solucionar el formato de correos. HECHO
 formato links en producción. HECHO
 Prohibir a un correo estar dos veces. HECHO
 añadir fecha a los post. HECHO
+Configurar envio automático actualizaciones, por suscripciones. HECHO
 
 
 mostrar imágenes a tamaño completo. APAÑADO con flickr.
@@ -14,7 +15,6 @@ validaciones en cada modelo. qué campos son obligatorios y cuales no, así como
 
 Comprobar rutas accesibles.
 
-
-Configurar envio automático actualizaciones, por suscripciones.
-
 captcha en los comentarios.
+
+Cuando se escriben comentarios sin nombre o sin cuerpo da error.

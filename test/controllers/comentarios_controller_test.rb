@@ -44,6 +44,6 @@ class ComentariosControllerTest < ActionController::TestCase
       delete :destroy, id: @comentario
     end
 
-    assert_redirected_to comentarios_path
+    assert_redirected_to home_path
   end
 end

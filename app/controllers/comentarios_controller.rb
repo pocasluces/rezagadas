@@ -33,7 +33,7 @@ class ComentariosController < ApplicationController
         format.json { render :show, status: :created, location: @entrada_blog }
       else
         format.html { render :new }
-        format.json { render json: @comentario.errors, status: :unprocessable_entity }
+        format.json { render json: @entrada_blog.errors, status: :unprocessable_entity }
       end
     end
   end
