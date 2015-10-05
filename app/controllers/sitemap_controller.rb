@@ -1,9 +1,13 @@
 class SitemapController < ApplicationController
 
-  def show
-    @posts = Post.where(:active => true) #we are generating url's for posts
+def index
+    @static_pages = [root_url]
+
+    @movies = Movie.all
+    @series = Series.all
+
     respond_to do |format|
-     format.xml
+      format.xml
     end
   end
 
