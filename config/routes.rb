@@ -22,6 +22,11 @@ Rails.application.routes.draw do
   get 'mates' => 'entrada_blogs#mates'
   get 'editablog' => 'entrada_blogs#editablog'
 
+
+
+  resources :sitemaps, :only => :show
+  get "sitemap" => "sitemaps#show"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
