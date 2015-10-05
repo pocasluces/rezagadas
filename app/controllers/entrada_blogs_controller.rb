@@ -61,14 +61,10 @@ class EntradaBlogsController < ApplicationController
 
           # Seleccionamos los usuarios a los que hay que enviar el correo electrónico
           #dependiendo de sus suscripciones.
-          #En este paso la aplicación devolvía un ERROR porque no podía incluir un ELSIF con:
-          #  elsif @tipoentrada.astrofoto
-          #     @usuarios = Usuario.find_by_codigo('foto' || 'todo')
-          #Hubiese sido más conveniente para el else hacerlo con Usuario.all
 
           if @tipoentrada.metematica
             @usuarios = Usuario.where({codigo: ["todo", "mates"]})
-         elsif @tipoentrada.astrofoto
+          elsif @tipoentrada.astrofoto
             @usuarios = Usuario.where({codigo: ["todo", "foto"]})
           else 
             @usuario = Usuario.all
