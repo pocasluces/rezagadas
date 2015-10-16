@@ -1,6 +1,8 @@
 class ComentariosController < ApplicationController
   before_action :set_comentario, only: [:show, :edit, :update, :destroy]
 
+  before_action :usuario_vacio, only: [:new, :create]
+
   # GET /comentarios
   # GET /comentarios.json
   def index
@@ -24,7 +26,9 @@ class ComentariosController < ApplicationController
   # POST /comentarios
   # POST /comentarios.json
   def create
+
     @entradablog = EntradaBlog.find(params[:entrada_blog_id])
+
     @comentario = @entradablog.comentarios.create(comentario_params)
 
     respond_to do |format|
@@ -32,8 +36,7 @@ class ComentariosController < ApplicationController
         format.html { redirect_to @entradablog, notice: 'Comentario was successfully created.' }
         format.json { render :show, status: :created, location: @entrada_blog }
       else
-        format.html { render :new }
-        format.json { render json: @entrada_blog.errors, status: :unprocessable_entity }
+        format.html { redirect_to @entradablog, notice: 'Error al crear el comentario. Falta el nombre o el cuerpo del mensaje.'}
       end
     end
   end
@@ -67,6 +70,17 @@ class ComentariosController < ApplicationController
     def set_comentario
       @comentario = Comentario.find(params[:id])
     end
+
+
+    def usuario_vacio
+
+      anon_user = params[:alias]
+    
+      if anon_user.blank?
+        params[:alias] = 'Anónimo'
+      end
+    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comentario_params

@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(version: 20150828192719) do
 
   create_table "comentarios", force: :cascade do |t|
     t.integer  "entrada_blog_id"
-    t.text     "body"
-    t.string   "alias"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.text     "body",            default: "Me gusta."
+    t.string   "alias",           default: "Anónimo"
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "entrada_blogs", force: :cascade do |t|
