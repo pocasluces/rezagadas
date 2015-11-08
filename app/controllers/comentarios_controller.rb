@@ -33,7 +33,7 @@ class ComentariosController < ApplicationController
 
     respond_to do |format|
       if @comentario.save
-        format.html { redirect_to @entradablog, notice: 'Comentario was successfully created.' }
+        format.html { redirect_to @entradablog, notice: 'Comentario creado correctamente.' }
         format.json { render :show, status: :created, location: @entrada_blog }
       else
         format.html { redirect_to @entradablog, notice: 'Error al crear el comentario. Falta el nombre o el cuerpo del mensaje.'}
