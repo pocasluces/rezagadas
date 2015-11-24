@@ -3,7 +3,6 @@ class EntradaBlog < ActiveRecord::Base
 	has_many :comentarios, dependent: :destroy
 
 	has_one :tipo_contenido
-
 	accepts_nested_attributes_for :tipo_contenido
 
 	validates :titulo, :body, presence: true
