@@ -1,11 +1,11 @@
  <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif; margin: 0;padding: 0;line-height: 1.5em;color: #797f7f; font-size: 14px;">
 
-
+<% ruta ="/entrada_blog_path/#{@post.id}/#{@post.id}_60x40.jpg" %>
 
 	Hola <%= @usuario.Nombre %>.<br><br>
 
-	Debido a tu suscripción a pocas luces te notificamos que hay una nueva actualización de la página con el título <a href="http://www.pocasluces.es/" style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;margin: 0;padding: 0;color: #398fd1;text-decoration: none;"><%= @post.titulo %></a><br><br>
-
+	Debido a tu suscripción a pocas luces te notificamos que hay una nueva actualización de la página con el título 
+<%= link_to @post.titulo, entrada_blog_path(@post.id) %> No te olvides de comentar, y si te gusta, de compartir.<br><br>
 
 
 	Recibe un saludo de <a href="http://www.pocasluces.es/" style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;margin: 0;padding: 0;color: #398fd1;text-decoration: none;">
