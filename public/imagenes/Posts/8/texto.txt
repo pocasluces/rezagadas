@@ -1,0 +1,24 @@
+<IMG SRC="/imagenes/Posts/8/8.jpg" ALT="Luna de colores" width=100% ><br>
+
+<a href="https://flic.kr/p/HzmskJ" target="_blank"> Ver imagen a tamaño completo</a>
+
+<br><br>
+
+En el anterior post que hice sobre la luna comentaba que el mejor momento para observarla era cuando no estaba llena para poder ver el Terminador. Pues en este post vengo a demostrar que no era del todo cierto. Depende de lo que quieras ver es mejor un día u otro.<br><br>
+
+¿Alguna vez nos hemos preguntado si la luna tiene colores en su superficie? Normalmente la miramos como si fuese en blanco y negro, y a lo sumo hemos visto que hay unas zonas más oscuras a las que llamamos mares. Pero su superficie esconde más detalles e información sobre la composición de su superficie. La trampa que he usado ha sido saturar la imagen tanto como mi pobre conocimiento de retoque me ha permitido. De este modo es más sencillo distinguir los diferentes colores y tonalidades.<br><br>
+
+En primer lugar tenemos que distinguir entre las TIERRAS ALTAS y  LOS MARES. Visualmente es una distinción sencilla de hacer. Las tierras altas lo forma la parte clara de la luna en la que se aprecia mucho mayor relieve debido sobre todo a la mayor cantidad de impactos. Por otro lado, la parte oscura es la que se conoce como mares. Que esta superficie sea lisa no se debe a que los meteoritos no hayan alcanzado nunca estas zonas, sino que todos los posibles cráteres que se pudieran haber formado en el pasado fueron enterrados por una posterior <a href="https://es.wikipedia.org/wiki/Colada_de_lava" target="_blank">colada de lava</a>. <br><br>
+
+<IMG SRC="/imagenes/Posts/8/Detalle.jpg" ALT="Detalle de la luna" width=50% ><br>
+
+Si nos fijamos en la imagen saturada, los colores nos dan información de los diferentes materiales que componen esa zona. Recomiendo para entender mejor de lo que hablo <a href="http://www.rc-astro.com/photo/id1018.html" target="_blank"> echar un vistazo esta otra imagen </a> que está tomada y saturada por gente que realmente sabe como hacerlo donde se observan mucho los diferentes materiales.<br><br>
+
+Para aquellos interesados en la geología de la luna y en las diferentes composiciones de la superficie les dejo un par de enlaces, que me parece una práctica más honesta que el clásico copy/paste:<br><br>
+
+
+-<a href="https://es.wikipedia.org/wiki/Geolog%C3%ADa_de_la_Luna#Las_tierras_altas_y_los_cr.C3.A1teres" target="_blank"> Geología de la luna. Wikipedia.</a><br>
+
+-<a href="http://www.astropractica.org/tem2/clrluna/clrluna.htm" target="_blank"> Cómo captar el color en la luna</a>
+
+
